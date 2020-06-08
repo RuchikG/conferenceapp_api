@@ -24,4 +24,14 @@ How to install the app:
     Now let's setup the tables and install the data.
 13. Now go back to your terminal/cmd prompt and run the following commands:
     docker cp create_tables.sql postgres-demo:/create_tables.sql
-    docker exec -it postgres-demo psql -d conference_app -f create_tables.sql -U postgres
+    docker exec -it postgres-demo psql -d postgres -f create_tables.sql -U postgres
+    These commands will create the necessary tables based on the schema I have provided. 
+    Once these commands are completed you should be able to see table created.
+14. Once you can see that run the following commands:
+    docker cp insert_data.sql postgres-demo:/insert_data.sql
+    docker exec -it postgres-demo psql -d conference_app -f insert_data.sql -U postgres
+    These commands will insert the necessary data that I have provided.
+    
+    ----------------------------------------------- This should complete the installation of the app ----------------------
+15. To test the app run the app on localhost:8080 in IntelliJ.
+16. Make a GET request to https://localhost:8080/api/v1/speakers to see the data as a JSON object.
