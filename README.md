@@ -4,7 +4,7 @@ How to install the app:
 1. Clone the repository to a location you like.
 2. Install Docker Desktop, Postman, and PgAdmin for you device.
 3. Once you have those things installed and ready to use, open terminal/cmd prompt and cd into the project directory.
-4. In your terminal/cmd prompt run docker run --name postgres-docker -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
+4. In your terminal/cmd prompt run: docker run --name postgres-docker -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
    This will start a docker container called postgres-docker on internal port 5432 with a database called postgres.
    Once you have done that now let's test if your container and database is working.
 5. In your terminal/cmd prompt run docker start postgres-docker
