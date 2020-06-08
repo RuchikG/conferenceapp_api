@@ -32,6 +32,6 @@ How to install the app:
     docker exec -it postgres-demo psql -d conference_app -f insert_data.sql -U postgres
     These commands will insert the necessary data that I have provided.
     
-    ----------------------------------------------- This should complete the installation of the app ----------------------
+    -------------------------------------------- This should complete the installation of the app ----------------------
 15. To test the app run the app on localhost:8080 in IntelliJ.
 16. Make a GET request to https://localhost:8080/api/v1/speakers to see the data as a JSON object.
