@@ -2,6 +2,7 @@
 This is a Java and Spring based conference app that maintains data for a conference.
 
 How to install the app:
+
 1. Clone the repository to a location you like.
 2. Install Docker Desktop, Postman, and PgAdmin for you device.
 3. Once you have those things installed and ready to use, open terminal/cmd prompt and cd into the project directory.
@@ -32,6 +33,7 @@ How to install the app:
    Password: postgres
 
 11. Now hit save and you should see a server under the servers test that you just created.
+
 12. Click on the server and check to see if you can see your database that you just created.
    
    Now let's setup the tables and install the data.
@@ -54,6 +56,6 @@ How to install the app:
     
     These commands will insert the necessary data that I have provided.
     
-    -------------------------------------------- This should complete the installation of the app ----------------------
+    ------------------------------------ This should test the installation of the app -----------------------------
 15. To test the app run the app on localhost:8080 in IntelliJ.
 16. Make a GET request to https://localhost:8080/api/v1/speakers to see the data as a JSON object.
